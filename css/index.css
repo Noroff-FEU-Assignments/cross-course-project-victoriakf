@@ -91,8 +91,8 @@ hr {
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 70vh;
-  max-width: 100%;
-  margin: 40px 380px;
+  max-width: 1125px;
+  margin: 40px auto;
   color: #0a3641;
   text-transform: uppercase;
   position: relative;
@@ -309,8 +309,12 @@ footer h3 {
   background-color: #118aa6;
   text-align: center;
   padding: 10px 20px;
+}
+
+.subscribe-btn p {
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
-  font-size: 25px;
+  font-size: 20px;
+  font-weight: 500;
   color: white;
 }
