@@ -11,12 +11,12 @@
 <body>
     <header>
         <div class="header_div">
-          <img src="images/RainyDays_Logo2.png" alt="logo" class="logo">
+          <a href="index.html"> <img src="images/RainyDays_Logo2.png" alt="logo" class="logo"> </a>
           <input type="text" placeholder="search" class="search-bar">
           <nav>
             <ul>
               <li><a href="index.html"> <img src="images/home.png" class="nav-icon"><span>Home</span></a></li>
-              <li><a href="account.html"><img src="images/account.png"  class="nav-icon">Account</a></li>
+              <li><a href="product_list.html"><img src="images/account.png"  class="nav-icon">Shop</a></li>
               <li><a href="contact.html"><img src="images/contact.png"  class="nav-icon">Contact</a></li>
               <li><a href="checkout.html"><img src="images/bag.png"  class="nav-icon">Cart</a></li>
             </ul>
@@ -25,12 +25,19 @@
             <hr>
       </header>
       <main>
-        <section class="about-us">
-          <div class="about">
-            <img src="images/about.jpg" class="about-pic">
+        <div class="breadcrumb">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li>/</li>
+            <li class="active">About</li>
+          </ul>
+        </div>
+        <section class="about">
+          <div class="about-pic">
             <h1>Welcome To Rainy Days</h1>
+            <img src="images/about.jpg">
           </div>
-          <div class="about-text">
+          <div>
             <p>We are a company with a passion for outdoors 
               adventures! We believe life's best adventures 
               are found outdoors, in our beautiful nature. We want 
@@ -53,7 +60,7 @@
         <section class="footer_nav">
           <div class="footer-links">
             <ul>
-              <li><a href="about.html">About</a></li>
+              <li class="active"><a href="about.html">About</a></li>
               <li><a href="contact.html">Contact Us</a></li>
               <li><a href="account.html">My Account</a></li>
             </ul>
@@ -72,7 +79,7 @@
             <h2>Newsletter</h2>
             <h3>Never miss out on a deal</h3>
             <div class="newsletter_signup">
-              <input type="email" class="news-email">
+              <input type="email" placeholder="Your Email" class="news-email">
               <div class="subscribe-btn">
                 <p>Subscribe</p>
               </div>

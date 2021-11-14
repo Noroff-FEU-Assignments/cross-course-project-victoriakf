@@ -6,54 +6,82 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600&family=Roboto:wght@100;500&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://use.typekit.net/bpw5pub.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/contact.css">
   </head>
 <body>
-    <header>
-        <div class="header_div">
-          <img src="images/RainyDays_Logo2.png" alt="logo" class="logo">
-          <input type="text" placeholder="search" class="search-bar">
-          <nav>
-            <ul>
-              <li><a href="index.html"> <img src="images/home.png" class="nav-icon"><span>Home</span></a></li>
-              <li><a href="account.html"><img src="images/account.png"  class="nav-icon">Account</a></li>
-              <li><a href="contact.html"><img src="images/contact.png"  class="nav-icon">Contact</a></li>
-              <li><a href="checkout.html"><img src="images/bag.png"  class="nav-icon">Cart</a></li>
-            </ul>
-          </nav>
+  <header>
+    <div class="header_div">
+      <a href="index.html"> <img src="images/RainyDays_Logo2.png" alt="logo" class="logo"> </a>
+      <input type="text" placeholder="search" class="search-bar">
+      <nav>
+        <ul>
+          <li><a href="index.html"> <img src="images/home.png" class="nav-icon"><span>Home</span></a></li>
+          <li><a href="product_list.html"><img src="images/account.png"  class="nav-icon">Shop</a></li>
+          <li class="active"><a href="contact.html"><img src="images/contact.png"  class="nav-icon">Contact</a></li>
+          <li><a href="checkout.html"><img src="images/bag.png"  class="nav-icon">Cart</a></li>
+        </ul>
+      </nav>
+    </div>
+    <hr>
+  </header>
+  <main>
+    <div class="breadcrumb">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li>/</li>
+        <li class="active">Contact</li>
+      </ul>
+    </div>
+    <section class="contact">
+      <div class="contact-info">
+        <h1>Contact Us</h1>
+        <p>We love to hear from you! Please write us an email with any of your concerns and one of our dedicated staff will get back to you as soon as possible.</p>
+        <p>Email: support@rainydays.com</p>
+      </div>
+      <div class="contact-form">
+        <h2>Send us a message:</h2>
+        <form action="index.html" class="wrap">
+          <label for="name">Full name</label>
+          <input type="text" id="name" name="name" />
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" />
+          <label for="message">Your message</label>
+          <textarea id="message" name="message" ></textarea>
+          <input type="submit" value="Send" class="send-btn"/>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <section class="footer_nav">
+      <div class="footer-links">
+        <ul>
+          <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="account.html">My Account</a></li>
+        </ul>
+      </div>
+    </section>
+    <section class="end_footer">
+      <div class="follow">
+        <h2>FOLLOW US</h2>
+        <div class="socials">
+          <a href="https://www.facebook.com"><img src="images/facebook.png"  class="socials-icons"></a>
+          <a href="https://www.youtube.com"><img src="images/youtube.png"  class="socials-icons"></a>
+          <a href="https://www.instagram.com"><img src="images/instagram.png" class="socials-icons"></a>
         </div>
-            <hr>
-      </header>
-      <footer>
-        <section class="footer_nav">
-          <div class="footer-links">
-            <ul>
-              <li><a href="about.html">About</a></li>
-              <li><a href="contact.html">Contact Us</a></li>
-              <li><a href="account.html">My Account</a></li>
-            </ul>
+      </div>
+      <div class="newsletter">
+        <h2>Newsletter</h2>
+        <h3>Never miss out on a deal</h3>
+        <div class="newsletter_signup">       
+          <input type="email" placeholder="Your Email" class="news-email">
+          <div class="subscribe-btn">
+            <p>Subscribe</p>
           </div>
-        </section>
-        <section class="end_footer">
-          <div class="follow">
-            <h2>FOLLOW US</h2>
-            <div class="socials">
-              <a href="https://www.facebook.com"><img src="images/facebook.png"  class="socials-icons"></a>
-              <a href="https://www.youtube.com"><img src="images/youtube.png"  class="socials-icons"></a>
-              <a href="https://www.instagram.com"><img src="images/instagram.png" class="socials-icons"></a>
-            </div>
-          </div>
-          <div class="newsletter">
-            <h2>Newsletter</h2>
-            <h3>Never miss out on a deal</h3>
-            <div class="newsletter_signup">
-              <input type="email" class="news-email">
-              <div class="subscribe-btn">
-                <p>Subscribe</p>
-              </div>
-            </div>
-          </div>
-        </section>
-      </footer>
+        </div>
+       </div>
+      </section>
+  </footer>
 </body>
 </html>

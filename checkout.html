@@ -6,25 +6,127 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600&family=Roboto:wght@100;500&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://use.typekit.net/bpw5pub.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/checkout.css">
   </head>
 <body>
-    <header>
-        <div class="header_div">
-          <img src="images/RainyDays_Logo2.png" alt="logo" class="logo">
-          <input type="text" placeholder="search" class="search-bar">
-          <nav>
-            <ul>
-              <li><a href="index.html"> <img src="images/home.png" class="nav-icon"><span>Home</span></a></li>
-              <li><a href="account.html"><img src="images/account.png"  class="nav-icon">Account</a></li>
-              <li><a href="contact.html"><img src="images/contact.png"  class="nav-icon">Contact</a></li>
-              <li><a href="checkout.html"><img src="images/bag.png"  class="nav-icon">Cart</a></li>
-            </ul>
-          </nav>
+  <header>
+    <div class="header_div">
+      <a href="index.html"> <img src="images/RainyDays_Logo2.png" alt="logo" class="logo"> </a>
+      <input type="text" placeholder="search" class="search-bar">
+      <nav>
+        <ul>
+          <li><a href="index.html"> <img src="images/home.png" class="nav-icon"><span>Home</span></a></li>
+          <li><a href="product_list.html"><img src="images/account.png"  class="nav-icon">Shop</a></li>
+          <li><a href="contact.html"><img src="images/contact.png"  class="nav-icon">Contact</a></li>
+          <li class="active"><a href="checkout.html"><img src="images/bag.png"  class="nav-icon">Cart</a></li>
+        </ul>
+      </nav>
+    </div>
+    <hr>
+  </header>
+  <main>
+    <div class="breadcrumb">
+      <ul>
+        <li class="arrow"> <a href="product_list.html"><img src="images/arrow-left.png"></a> </li>
+        <li class="keep-btn"><a href="product_list.html">Keep Shopping</a></li>
+      </ul>
+    </div>
+    <section class="shopping-cart">
+      <h1>1. Your Shopping Cart:</h1>
+      <div class="cart">
+        <div class="product-img">
+          <img src="images/yellow.jpg" class="cart-img">
         </div>
-            <hr>
-      </header>
-      <footer>
+        <div class="product-info">
+          <p>Canary Rain Jacket</p>
+          <p>$ 89.00</p>
+          <select id="size" name="size">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+          </select>
+        </div>
+        <div class="number">
+          <span class="minus">-</span>
+          <input type="text" value="1"/>
+          <span class="plus">+</span>
+          <p>$ 89.00</p>
+        </div>
+      </div>
+      <div class="coupon">
+        <input type="text" placeholder="Gift card or discount code" class="code">
+        <button>Apply</button>
+      </div>
+    </section>
+    <section class="delivery">
+      <h2>2. Delivery</h2>
+      <div class="options">
+        <label>Pick up at our store - Free!</label>
+        <input type="radio" name="delivery">
+      </div>
+      <div class="options">
+        <label>Post Delivery | 5-7 days - $ 5.00</label>
+        <input type="radio" name="delivery">
+      </div>
+      <div class="options">
+        <label>Express Delivery | 1-2 days - $ 10.00</label>
+        <input type="radio" name="delivery">
+      </div>
+    </section>
+    <section class="shipping">
+      <h2>Shipping Address</h2>
+      <form action="index.html">
+        <div class="wrap">
+          <div>
+            <label for="first-name">First Name</label>
+            <input type="text" id="name" name="first-name" />
+            <label for="street">Street Name</label>
+            <input type="text" id="street" name="street" />
+            <label for="city">Postal Code and City</label>
+            <input type="text" id="city" name="city" />
+            <label for="number">Phone number</label>
+            <input type="text" id="number" name="number" />
+          </div>
+          <div>
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" name="last-name" />
+            <label for="house">House Number</label>
+            <input type="text" id="house" name="house" />
+           <label for="Country">Country</label>
+           <input type="text" id="name" name="Country" />
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" />
+          </div>
+        </div>
+        <div class="check">
+          <input type="checkbox" id="email-updates" name="email-updates" />
+        <label for="email-updates">Sign up for our newsletter</label>
+        </div>
+      </form>
+    </section>
+    <section class="payment">
+      <h2>3. Payment</h2>
+      <div class="p-option">
+        <label>Paypal</label>
+        <input type="radio" name="payment">
+      </div>
+      <div class="p-option">
+        <label>Credit card - Add card details</label>
+        <input type="radio" name="payment">
+      </div>
+      <div class="p-option">
+        <label>Debit card - Add card details</label>
+        <input type="radio" name="payment">
+      </div>
+      <div class="pay">
+        <p>Total</p>
+        <p><b>$ 89.00</b></p>
+        <button>Buy Now</button>
+      </div>
+    </section>
+  </main>
+  <footer>
         <section class="footer_nav">
           <div class="footer-links">
             <ul>
@@ -47,13 +149,13 @@
             <h2>Newsletter</h2>
             <h3>Never miss out on a deal</h3>
             <div class="newsletter_signup">
-              <input type="email" class="news-email">
+              <input type="email" placeholder="Your Email"  class="news-email">
               <div class="subscribe-btn">
                 <p>Subscribe</p>
               </div>
             </div>
           </div>
         </section>
-      </footer>
+   </footer>
 </body>
 </html>

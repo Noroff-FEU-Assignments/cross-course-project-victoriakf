@@ -6,17 +6,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600&family=Roboto:wght@100;500&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://use.typekit.net/bpw5pub.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/success.css">
   </head>
 <body>
     <header>
         <div class="header_div">
-          <img src="images/RainyDays_Logo2.png" alt="logo" class="logo">
+          <a href="index.html"> <img src="images/RainyDays_Logo2.png" alt="logo" class="logo"> </a>
           <input type="text" placeholder="search" class="search-bar">
           <nav>
             <ul>
               <li><a href="index.html"> <img src="images/home.png" class="nav-icon"><span>Home</span></a></li>
-              <li><a href="account.html"><img src="images/account.png"  class="nav-icon">Account</a></li>
+              <li><a href="product_list.html"><img src="images/account.png"  class="nav-icon">Shop</a></li>
               <li><a href="contact.html"><img src="images/contact.png"  class="nav-icon">Contact</a></li>
               <li><a href="checkout.html"><img src="images/bag.png"  class="nav-icon">Cart</a></li>
             </ul>
@@ -24,6 +24,29 @@
         </div>
             <hr>
       </header>
+      <main>
+        <div class="breadcrumb">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li>/</li>
+            <li class="active">Checkout</li>
+          </ul>
+        </div>
+        <section class="success">
+            <img src="images/check.png" class="checkmark">
+            <p class="confirmation">
+              Thank you for your purchase!<br>
+              Your order number is: #0084923
+            </p>
+            <p class="confirmation">
+              You will shortly receive an email with shipping and tracking info.
+            </p>
+            <div class="continue">
+              <a href="product_list.html"><p>Continue shopping</p></a>
+            </div>
+         
+        </section>
+      </main>
       <footer>
         <section class="footer_nav">
           <div class="footer-links">
@@ -47,7 +70,7 @@
             <h2>Newsletter</h2>
             <h3>Never miss out on a deal</h3>
             <div class="newsletter_signup">
-              <input type="email" class="news-email">
+              <input type="email" placeholder="Your Email"  class="news-email">
               <div class="subscribe-btn">
                 <p>Subscribe</p>
               </div>
