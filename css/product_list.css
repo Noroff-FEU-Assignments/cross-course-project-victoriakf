@@ -92,7 +92,7 @@
   height: 19px;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1125px) {
   .intro-text p {
     font-size: 16px;
   }

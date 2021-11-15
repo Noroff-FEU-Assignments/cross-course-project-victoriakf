@@ -9,6 +9,10 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+button {
+  cursor: pointer;
+}
+
 header {
   margin: 0rem 2.5rem;
   align-items: center;
@@ -211,14 +215,13 @@ footer h3 {
   color: white;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 600px) {
   .web-menu {
     display: none;
   }
 
   header {
     margin: 0rem 0rem;
-    padding-left: 4rem;
   }
 
   .header_div {
@@ -353,7 +356,7 @@ footer h3 {
     display: flex;
     flex-direction: column;
     text-align: center;
-    height: 20px;
+    height: 100px;
   }
 
   .follow {
@@ -402,3 +405,5 @@ footer h3 {
   }
 
 }
+
+
