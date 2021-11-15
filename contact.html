@@ -1,28 +1,50 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Rainy Days</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width initial-scale=1.0" />
+    <meta name="description" content="Contact Form for Rainy Days." />
+    <title>Contact us at Rainy Days</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600&family=Roboto:wght@100;500&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://use.typekit.net/bpw5pub.css">
     <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/headfoot.css">
   </head>
 <body>
   <header>
     <div class="header_div">
-      <a href="index.html"> <img src="images/RainyDays_Logo2.png" alt="logo" class="logo"> </a>
-      <input type="text" placeholder="search" class="search-bar">
+      
+      <label for="hamburger-menu" class="mobile-menu"><img src="images/hamburger-icon.png"></label>
+
+      <input type="checkbox" id="hamburger-menu" class="mobile.menu">
+      <a href="index.html"> <img src="images/logo-mobile.png" class="logo-mobile mobile-menu"> </a>
+
+
+      <div class="mobile-icons">
+        <label for="search-mobile" name="search-mobile"><img src="images/search.png" class="mobile-icon mobile-menu"></label>
+
+        <input type="checkbox" id="search-mobile"  class="mobile-search">
+
+        <input type="text" id="search-mobile"  class="search-input">
+
+        <a href="checkout.html"><img src="images/bag-mobile.png" class="mobile-icon mobile-menu"> </a>
+      </div>
+
+
+    <a href="index.html"> <img src="images/RainyDays_Logo2.png" class="logo web-menu"> </a>
+      <input type="text" placeholder="search" class="search-bar web-menu">
       <nav>
         <ul>
-          <li><a href="index.html"> <img src="images/home.png" class="nav-icon"><span>Home</span></a></li>
-          <li><a href="product_list.html"><img src="images/account.png"  class="nav-icon">Shop</a></li>
-          <li class="active"><a href="contact.html"><img src="images/contact.png"  class="nav-icon">Contact</a></li>
+          <li class="active"><a href="index.html"> <img src="images/home.png" class="nav-icon"><span>Home</span></a></li>
+          <li><a href="product_list.html" class="shop"><img src="images/shop.png" class="nav-icon">Shop</a></li>
+          <li><a href="contact.html"><img src="images/contact.png"  class="nav-icon">Contact</a></li>
           <li><a href="checkout.html"><img src="images/bag.png"  class="nav-icon">Cart</a></li>
         </ul>
       </nav>
     </div>
-    <hr>
+        <hr>
   </header>
   <main>
     <div class="breadcrumb">
@@ -41,13 +63,13 @@
       <div class="contact-form">
         <h2>Send us a message:</h2>
         <form action="index.html" class="wrap">
-          <label for="name">Full name</label>
+          <label for="name" name="name">Full name</label>
           <input type="text" id="name" name="name" />
-          <label for="email">Email</label>
+          <label for="email" name="email">Email</label>
           <input type="email" id="email" name="email" />
-          <label for="message">Your message</label>
+          <label for="message" name="message">Your message</label>
           <textarea id="message" name="message" ></textarea>
-          <input type="submit" value="Send" class="send-btn"/>
+          <a href="confirmation-sent.html" class="confirmation-sent">Send</a>
         </form>
       </div>
     </section>

@@ -1,28 +1,50 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Rainy Days</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width initial-scale=1.0" />
+    <meta name="description" content="View your shopping cart and finalize your order at Rainy Days." />
+    <title>Checkout - Rainy Days</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600&family=Roboto:wght@100;500&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://use.typekit.net/bpw5pub.css">
     <link rel="stylesheet" href="css/checkout.css">
+    <link rel="stylesheet" href="css/headfoot.css">
   </head>
 <body>
   <header>
     <div class="header_div">
-      <a href="index.html"> <img src="images/RainyDays_Logo2.png" alt="logo" class="logo"> </a>
-      <input type="text" placeholder="search" class="search-bar">
+      
+      <label for="hamburger-menu" class="mobile-menu"><img src="images/hamburger-icon.png"></label>
+
+      <input type="checkbox" id="hamburger-menu" class="mobile.menu">
+      <a href="index.html"> <img src="images/logo-mobile.png" class="logo-mobile mobile-menu"> </a>
+
+
+      <div class="mobile-icons">
+        <label for="search-mobile" name="search-mobile"><img src="images/search.png" class="mobile-icon mobile-menu"></label>
+
+        <input type="checkbox" id="search-mobile"  class="mobile-search">
+
+        <input type="text" id="search-mobile"  class="search-input">
+
+        <a href="checkout.html"><img src="images/bag-mobile.png" class="mobile-icon mobile-menu"> </a>
+      </div>
+
+
+    <a href="index.html"> <img src="images/RainyDays_Logo2.png" class="logo web-menu"> </a>
+      <input type="text" placeholder="search" class="search-bar web-menu">
       <nav>
         <ul>
-          <li><a href="index.html"> <img src="images/home.png" class="nav-icon"><span>Home</span></a></li>
-          <li><a href="product_list.html"><img src="images/account.png"  class="nav-icon">Shop</a></li>
+          <li class="active"><a href="index.html"> <img src="images/home.png" class="nav-icon"><span>Home</span></a></li>
+          <li><a href="product_list.html" class="shop"><img src="images/shop.png" class="nav-icon">Shop</a></li>
           <li><a href="contact.html"><img src="images/contact.png"  class="nav-icon">Contact</a></li>
-          <li class="active"><a href="checkout.html"><img src="images/bag.png"  class="nav-icon">Cart</a></li>
+          <li><a href="checkout.html"><img src="images/bag.png"  class="nav-icon">Cart</a></li>
         </ul>
       </nav>
     </div>
-    <hr>
+        <hr>
   </header>
   <main>
     <div class="breadcrumb">
@@ -35,7 +57,7 @@
       <h1>1. Your Shopping Cart:</h1>
       <div class="cart">
         <div class="product-img">
-          <img src="images/yellow.jpg" class="cart-img">
+          <img src="images/yellow.jpg" class="cart-img" alt="product-photo-yellow-jacket">
         </div>
         <div class="product-info">
           <p>Canary Rain Jacket</p>
@@ -55,22 +77,22 @@
         </div>
       </div>
       <div class="coupon">
-        <input type="text" placeholder="Gift card or discount code" class="code">
+        <input type="text" placeholder="Discount code" class="code">
         <button>Apply</button>
       </div>
     </section>
     <section class="delivery">
       <h2>2. Delivery</h2>
       <div class="options">
-        <label>Pick up at our store - Free!</label>
+        <label for="delivery" name="delivery">Pick up at our store - Free!</label>
         <input type="radio" name="delivery">
       </div>
       <div class="options">
-        <label>Post Delivery | 5-7 days - $ 5.00</label>
+        <label for="delivery" name="delivery">Post Delivery | 5-7 days - $ 5.00</label>
         <input type="radio" name="delivery">
       </div>
       <div class="options">
-        <label>Express Delivery | 1-2 days - $ 10.00</label>
+        <label for="delivery" name="delivery">Express Delivery | 1-2 days - $ 10.00</label>
         <input type="radio" name="delivery">
       </div>
     </section>
@@ -79,50 +101,50 @@
       <form action="index.html">
         <div class="wrap">
           <div>
-            <label for="first-name">First Name</label>
+            <label for="first-name" name="first-name">First Name</label>
             <input type="text" id="name" name="first-name" />
-            <label for="street">Street Name</label>
+            <label for="street" name="street">Street Name</label>
             <input type="text" id="street" name="street" />
-            <label for="city">Postal Code and City</label>
+            <label for="city" name="city">Postal Code and City</label>
             <input type="text" id="city" name="city" />
-            <label for="number">Phone number</label>
+            <label for="number" name="city">Phone number</label>
             <input type="text" id="number" name="number" />
           </div>
           <div>
-            <label for="last-name">Last Name</label>
+            <label for="last-name" name="last-name">Last Name</label>
             <input type="text" id="last-name" name="last-name" />
-            <label for="house">House Number</label>
+            <label for="house" name="house">House Number</label>
             <input type="text" id="house" name="house" />
-           <label for="Country">Country</label>
-           <input type="text" id="name" name="Country" />
-          <label for="email">Email</label>
+           <label for="country" name="country">Country</label>
+           <input type="text" id="name" name="country" />
+          <label for="email" name=email>Email</label>
           <input type="email" id="email" name="email" />
           </div>
         </div>
         <div class="check">
           <input type="checkbox" id="email-updates" name="email-updates" />
-        <label for="email-updates">Sign up for our newsletter</label>
+        <label for="email-updates" name="email-updates">Sign up for our newsletter</label>
         </div>
       </form>
     </section>
     <section class="payment">
       <h2>3. Payment</h2>
       <div class="p-option">
-        <label>Paypal</label>
+        <label for="payment" name="payment">Paypal</label>
         <input type="radio" name="payment">
       </div>
       <div class="p-option">
-        <label>Credit card - Add card details</label>
+        <label for="payment" name="payment">Credit card - Add card details</label>
         <input type="radio" name="payment">
       </div>
       <div class="p-option">
-        <label>Debit card - Add card details</label>
+        <label for="payment" name="payment">Debit card - Add card details</label>
         <input type="radio" name="payment">
       </div>
       <div class="pay">
         <p>Total</p>
         <p><b>$ 89.00</b></p>
-        <button>Buy Now</button>
+        <a href="success.html"><button>Buy Now</button></a>
       </div>
     </section>
   </main>

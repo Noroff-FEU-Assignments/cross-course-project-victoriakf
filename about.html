@@ -1,29 +1,51 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Rainy Days</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width initial-scale=1.0" />
+    <meta name="description" content="Read about our company at Rainy Days." />
+    <title>About Us - Rainy Days</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600&family=Roboto:wght@100;500&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://use.typekit.net/bpw5pub.css">
     <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/headfoot.css">
   </head>
 <body>
-    <header>
-        <div class="header_div">
-          <a href="index.html"> <img src="images/RainyDays_Logo2.png" alt="logo" class="logo"> </a>
-          <input type="text" placeholder="search" class="search-bar">
-          <nav>
-            <ul>
-              <li><a href="index.html"> <img src="images/home.png" class="nav-icon"><span>Home</span></a></li>
-              <li><a href="product_list.html"><img src="images/account.png"  class="nav-icon">Shop</a></li>
-              <li><a href="contact.html"><img src="images/contact.png"  class="nav-icon">Contact</a></li>
-              <li><a href="checkout.html"><img src="images/bag.png"  class="nav-icon">Cart</a></li>
-            </ul>
-          </nav>
-        </div>
-            <hr>
-      </header>
+  <header>
+    <div class="header_div">
+      
+      <label for="hamburger-menu" class="mobile-menu"><img src="images/hamburger-icon.png"></label>
+
+      <input type="checkbox" id="hamburger-menu" class="mobile.menu">
+      <a href="index.html"> <img src="images/logo-mobile.png" class="logo-mobile mobile-menu"> </a>
+
+
+      <div class="mobile-icons">
+        <label for="search-mobile" name="search-mobile"><img src="images/search.png" class="mobile-icon mobile-menu"></label>
+
+        <input type="checkbox" id="search-mobile"  class="mobile-search">
+
+        <input type="text" id="search-mobile"  class="search-input">
+
+        <a href="checkout.html"><img src="images/bag-mobile.png" class="mobile-icon mobile-menu"> </a>
+      </div>
+
+
+    <a href="index.html"> <img src="images/RainyDays_Logo2.png" class="logo web-menu"> </a>
+      <input type="text" placeholder="search" class="search-bar web-menu">
+      <nav>
+        <ul>
+          <li class="active"><a href="index.html"> <img src="images/home.png" class="nav-icon"><span>Home</span></a></li>
+          <li><a href="product_list.html" class="shop"><img src="images/shop.png" class="nav-icon">Shop</a></li>
+          <li><a href="contact.html"><img src="images/contact.png"  class="nav-icon">Contact</a></li>
+          <li><a href="checkout.html"><img src="images/bag.png"  class="nav-icon">Cart</a></li>
+        </ul>
+      </nav>
+    </div>
+        <hr>
+  </header>
       <main>
         <div class="breadcrumb">
           <ul>
@@ -35,7 +57,7 @@
         <section class="about">
           <div class="about-pic">
             <h1>Welcome To Rainy Days</h1>
-            <img src="images/about.jpg">
+            <img src="images/about.jpg" class="picture"  alt="smiling-girl-in-the-rain">
           </div>
           <div>
             <p>We are a company with a passion for outdoors 
@@ -60,7 +82,7 @@
         <section class="footer_nav">
           <div class="footer-links">
             <ul>
-              <li class="active"><a href="about.html">About</a></li>
+              <li><a href="about.html">About</a></li>
               <li><a href="contact.html">Contact Us</a></li>
               <li><a href="account.html">My Account</a></li>
             </ul>
