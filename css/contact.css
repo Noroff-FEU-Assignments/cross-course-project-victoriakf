@@ -1,86 +1,75 @@
 
-
-  .contact {
-    max-width: 800px;
-    margin: 60px auto 50px auto;
-    display: flex;
-    gap: 70px;
-    color: #124C59;
-  }
-
-  .contact > * {
-    flex: 1;
-  }
-
-  .contact-form,
-  form {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .contact h1 {
-    font-family: 'rig-solid-bold-inline-solo';
-    font-size: 3.8rem;
-    color: #B45000;
-  }
-  .contact p {
-    margin-top: 22px;
-  }
-
-  .contact h2 {
-    margin-bottom: 10px;
-  }
-
-  .contact-form {
-    margin-top: 15px;
-    font-size: 16px;
-  }
-
-  .wrap .confirmation {
-    text-align: center;
-  }
-
-  .confirmation-sent {
-    margin: 20px auto;
-    background-color: #118aa6;
-    border: none;
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1em;
-    text-transform: uppercase;
-    padding: 10px 80px;
-    border-radius: 2px;
-  }
-
-  input,
-  textarea {
-    border: 1px solid #CECBCB;
-    margin: 5px 0px;
-    padding: 10px;
-  }
-
-  @media (max-width: 1023px) {
-  .contact {
-    display: flex;
-    flex-direction: column;
-    margin: 3rem 5rem;
-  }
-
-  .contact h1 {
-    text-align: center;
-  }
-
-  .send-btn {
-    padding: 10px 75px;
-  }
+.contact-info {
+  margin: 2rem;
 }
 
-@media (max-width: 600px) {
-  .contact h1 {
-    font-size: 2.8rem;
-  }
-
-  .contact-form {
-    margin-top: -20px;
-  }
+.contact h1 {
+  font-family: 'rig-solid-bold-inline-solo';
+  font-size: 3.8rem;
+  color: #B45000;
 }
+.contact p {
+  margin-top: 22px;
+}
+
+form {
+  padding: 20px;
+  max-width: 800px;
+  margin: 2rem;
+  color: #124C59;
+}
+
+.form-group label {
+  display: block;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.form-group input {
+  width: 320px;
+  padding: 10px;
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+
+input.invalid {
+  border: 1px solid red;
+}
+
+.error-message {
+  color: red;
+}
+
+.send-button {
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 20px;
+  background: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.send-button:hover {
+  background-color: yellow;
+  border: black;
+  color: white;
+}
+
+.hidden {
+  display: none;
+}
+
+textarea {
+  width: 500px;
+  height: 200px;
+}
+
+.sent-message {
+  margin: 2rem;
+}
+
+.sent-message p {
+  font-weight: 400;
+  color:black;
+}
+
