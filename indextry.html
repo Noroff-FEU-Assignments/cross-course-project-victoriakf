@@ -14,13 +14,13 @@
       </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width initial-scale=1.0" />
-    <meta name="description" content="Log in to your account at Rainy Days." />
-    <title>Your account - Rainy Days</title>
+    <meta name="description" content="High-quality jackets for every activity from Rainy Days." />
+    <title>Rainy Days - Shop our high quality jackets</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600&family=Roboto:wght@100;500&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://use.typekit.net/bpw5pub.css">
-    <link rel="stylesheet" href="css/account.css">
+    <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
@@ -48,7 +48,7 @@
         <input type="text" placeholder="search" class="search-bar web-menu">
         <nav>
           <ul>
-            <li><a href="index.html"> <img src="images/home.png" class="nav-icon"><span>Home</span></a></li>
+            <li class="active"><a href="index.html"> <img src="images/home.png" class="nav-icon"><span>Home</span></a></li>
             <li><a href="product_list.html" class="shop"><img src="images/shop.png" class="nav-icon">Shop</a></li>
             <li><a href="contact.html"><img src="images/contact.png"  class="nav-icon">Contact</a></li>
             <li><a href="checkout.html"><img src="images/bag.png"  class="nav-icon">Cart</a></li>
@@ -58,25 +58,52 @@
           <hr>
     </header>
     <main>
-      <div class="breadcrumb">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li>/</li>
-          <li class="active">My Account</li>
-        </ul>
-      </div>
-        <section class="log-in">
-            <h1>LOGIN</h1>
-            <form action="index.html" class="wrap">
-                <label for="username" name="username">Username</label>
-                <input type="email" id="username" name="username" />
-                <label for="password" name="password">Password</label>
-                <input type="password" id="password" name="password"/>
-                <p>Forgot password?</p>
-                <input type="submit" value="Log in" class="login-btn btn"/> 
-                <input type="submit" value="Sign up" class="signup-btn btn"/>
-            </form>
-        </section>
+      <section class="welcome">
+        <div class="welcome-content">
+          <h1>Our New Styles Are In</h1>
+          <h2>Adventure In Comfort This Fall</h2>
+        </div>
+        <div class="shop-news-btn">
+          <a href="product_list.html">Shop News</a>
+        </div>
+      </section>
+      <section class="popular content">
+            <h2>Popular Styles Now</h2>
+            <div class="card">
+                <div class="card-image"><a href="product.html"> <img src="images/red.jpg" alt="product-red-jacket" class="product-photo"></a></div>
+                <div class="card-text">
+                    <h3>Windbreaker</h3><p>$ 89.00</p></div>
+            </div>
+            <div class="card">
+                <div class="card-image"><a href="product.html"> <img src="images/red.jpg" alt="product-red-jacket" class="product-photo"></a></div>
+                <div class="card-text">
+                    <h3>Windbreaker</h3><p>$ 89.00</p></div>
+            </div>
+            <div class="card">
+                <div class="card-image"><a href="product.html"> <img src="images/red.jpg" alt="product-red-jacket" class="product-photo"></a></div>
+                <div class="card-text">
+                    <h3>Windbreaker</h3><p>$ 89.00</p></div>
+            </div>
+      </section>
+      <section class="sales">
+        <h2>Shop Sales</h2>
+        <div class="sales-product">
+          <a href="product_list.html">
+            <img src="images/women.jpg" alt="women-jacket-sales" class="product-photo">
+          </a>
+          <div>
+            <a href="product_list.html">Women</a>
+          </div>
+        </div>
+        <div class="sales-product">
+          <a href="product_list.html">
+            <img src="images/men.jpg" alt="men-jacket-sale" class="product-photo">
+          </a>
+          <div>
+            <a href="product_list.html">Men</a>
+          </div>
+        </div>
+      </section>
     </main>
     <footer>
       <section class="footer_nav">
@@ -113,5 +140,5 @@
         </div>
       </section>
     </footer>
-</body>
+  </body>
 </html>

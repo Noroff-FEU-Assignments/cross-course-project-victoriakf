@@ -147,7 +147,7 @@ p {
 
 @media (max-width: 1125px) {
   .welcome {
-    min-height: 80vh;
+    max-height: 10vh;
   }
 
   .welcome-content h1 {
@@ -202,4 +202,19 @@ p {
     height: 250px;
   }
   
+}
+
+@media (max-width: 600px) {
+  .welcome {
+    min-height: 50vh;
+  }
+
+  .welcome-content {
+    padding: 1rem;
+  }
+
+  .welcome-content h2{
+    display: none;
+  }
+
 }
