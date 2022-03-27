@@ -17,13 +17,7 @@ h1 {
   display: flex;
   gap: 20px;
   margin-top: 20px;
-}
-
-.product-img {
-  height: 130px;
-  width: 200px;
-  position: relative;
-  padding: 20px;
+  max-height: 30vh;
 }
 
 .product-info {
@@ -34,7 +28,7 @@ h1 {
 }
 
 #size {
-  margin-top: 40px;
+  margin-top: 5px;
   font-size: 18px;
   font-weight: 500;
   border-radius: 0;
@@ -45,24 +39,10 @@ h1 {
   width: 55%;
 }
 
-.number {
-  margin-left: 400px;
-  margin-top: 35px;
-}
-
-.number > input {
-  max-width: 15px;
-  text-align: center;
-  margin-bottom: 70px;
-  border-radius: 0;
-  border: 1px solid #bfbaba;
-  font-size: 20px;
-}
-
 .cart-img {
   height: 100%;
-  width: 100%;
   object-fit: cover;
+  margin-left: 10rem;
 }
 
 .shopping-cart button,
@@ -178,12 +158,53 @@ form {
     margin: 0rem 2rem;
   }
 
-  .number {
-    margin-left: 0px;
+  .cart {
+    display: flex;
+    flex-wrap: wrap;
   }
 
+  .cart-img {
+    max-height: 15rem;
+    object-fit: cover;
+    margin-left: 10rem;
+  }
+
+  .product-info p {
+    margin: 0rem;
+  }
+
+  #size {
+    margin-top: 5px;
+  }
   .code {
     max-width: 500px;
   }
 
+  }
+
+  @media (max-width: 800px) {
+
+    .cart {
+      margin-top: 20px;
+      max-height: 40vh;
+      align-items: center;
+    }
+
+    .cart-img {
+      margin-left: 0rem;
+    }
+
+    .product-info {
+      margin: 5px 10px;
+      margin-top: -10px;
+    }
+
+    .product-info p{
+      margin: 0;
+      font-size: 18px;
+    }
+
+    .shopping-cart .code {
+      width: 50%;
+    }
   }

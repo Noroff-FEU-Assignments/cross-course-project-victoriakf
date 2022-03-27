@@ -47,6 +47,19 @@
   opacity: none;
 }
 
+.product-section {
+  margin: auto;
+}
+
+.product-section h2 {
+  margin-top: 5rem;
+  font-size: 26px;
+  color: #0a3641;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
 .popular {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
